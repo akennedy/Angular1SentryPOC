@@ -82,6 +82,14 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/raven-js/dist/raven.js"></script>
+    <script src="bower_components/raven-js/dist/raven.js"></script>
+    <script src="bower_components/raven-js/dist/plugins/angular.js"></script>
+    <script>
+      Raven
+        .config('ADD SENTRY DSN HERE')
+        .addPlugin(Raven.Plugins.Angular)
+        .install();
+    </script>
     <!-- endbower -->
     <!-- endbuild -->
 
